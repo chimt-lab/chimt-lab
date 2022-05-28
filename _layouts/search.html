@@ -1,0 +1,45 @@
+{% include header.html %}
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/lunr.min.js"></script>
+<script src="assets/js/lunr-feed.js"></script>
+<style>
+    .search-input {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 25px;
+        font-family: inherit;
+        border: 0;
+        border-radius: 10px;
+        appearance: none;
+    }
+
+    .pbox {
+        display: none;
+    }
+    .result-body a {font-size: 22px;font-weight: bold;color: var(--main-color);}
+    .all-posts.results p {font-size: 20px;font-weight: bold;}
+    .result {
+        margin: 15px auto;
+        background-color: white;
+        padding: 5px;
+        border: 1px solid #c1c1c1;
+        border-radius: 15px;
+        box-shadow: var(--main-box-shadow);}
+</style>
+<article>
+    <header>
+        <h1>
+            <span>{{page.title}}</span>
+        </h1>
+    </header>
+    
+    <input placeholder="Search…" type="search" id="search" class="search-input">
+
+    <section class="pbox">
+        <div id="results" class="all-posts results"></div>
+        {{content}}
+    </section>
+</article>
+{% include footer.html %}

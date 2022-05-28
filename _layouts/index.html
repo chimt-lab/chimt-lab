@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIMT LAB</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.ico">
+    <style>
+        body {
+            background: url("assets/img/back3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        @media all and (min-width: 750px) {
+
+            .container {  display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap: 50px 10px;
+                grid-auto-flow: row;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;
+                grid-template-areas:
+                    "start-qrcode start-logo start-ulogo"
+                    "start-slider start-slider start-flogo"
+                    "start-slider start-slider start-text"
+                    "start-slider start-slider start-button-learnmore";
+            }
+
+            .start-qrcode { grid-area: start-qrcode; }
+
+            .start-logo { grid-area: start-logo; }
+
+            .start-ulogo { grid-area: start-ulogo; }
+
+            .start-flogo { grid-area: start-flogo; }
+
+            .start-text { grid-area: start-text; }
+
+            .start-button-learnmore { grid-area: start-button-learnmore; }
+
+            .start-slider { grid-area: start-slider; align-self: self-start; width: 100%; }
+
+        }
+
+        @media all and (max-width: 749px) {
+            .container {
+                text-align: center;
+            }
+            .container div {
+                display: inline-block;
+                margin: 30px 5px;
+            }
+        }
+
+        .container img {
+            width: 100%;
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .container p {
+            text-align: center;
+            /* max-width: 150px; */
+            font-size: 22px;
+            line-height: 40px;
+            font-weight: bold;
+            color: #fff;
+            -webkit-text-stroke: 2px var(--main-color);
+            letter-spacing: 5px;
+            text-shadow: -2px 2px 30px var(--main-color), 0 0 0px var(--main-color);
+            background-color: #25586e47;
+        }
+
+        .container a {
+            text-decoration: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="start-logo">
+            <a href="home.html">
+                <img src="assets/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="start-qrcode">
+            <a href="home.html">
+                <img class="qrcode" width="300" height="300" src="assets/img/qrcode.png" alt="qrcode">
+            </a>
+        </div>
+        <div class="start-ulogo">
+            <img src="assets/img/misr-university-logo-150.png" alt="misr university logo">
+        </div>
+        <div class="start-flogo">
+            <img src="assets/img/faculty-logo.png" alt="faculty logo">
+        </div>
+        <div class="start-text">
+            <p>CLINICAL CHEMISTRY, HEAMATOLOGY, IMMUNOLOGY, MICROBIOLOGY</p>
+        </div>
+        <div class="start-slider">
+            {% include slider.html %}
+        </div>
+        <div class="start-button-learnmore">
+            <a href="home.html">
+                <div class="start-button">Learn More</div>
+            </a>
+        </div>
+      </div>
+    <!-- <header class="logo">
+        <a href="home.html">
+            <img class="qrcode" width="300" height="300" src="assets/img/qrcode.png" alt="qrcode">
+        </a>
+        <a href="home.html">
+            <img src="assets/img/logo.png" alt="logo">
+        </a>
+        <div class="start-right">
+            <img src="assets/img/misr-university-logo-150.png" alt="misr university logo">
+            <div class="start-slider-right">
+                <div class="notslider">
+                    <img src="assets/img/faculty-logo.png" alt="faculty logo">
+                    <p>CLINICAL CHEMISTRY, HEAMATOLOGY, IMMUNOLOGY, MICROBIOLOGY</p>
+                </div>
+                <div class="slider">
+                    <img src="assets/img/misr-university-logo-150.png" alt="misr university logo">
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- <header class="logo logo-intro">
+        <a href="home.html">
+            <img src="assets/img/logo.png" alt="logo">
+        </a>
+        <p>CLINICAL CHEMISTRY, HEAMATOLOGY, IMMUNOLOGY, MICROBIOLOGY</p>
+        <a href="home.html">
+            <img class="qrcode" width="300" height="300" src="assets/img/qrcode.png" alt="qrcode">
+        </a>
+        <a href="home.html">
+            <div class="start-button">START</div>
+        </a>
+    </header> -->
+    <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

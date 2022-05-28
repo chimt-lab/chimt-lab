@@ -1,0 +1,26 @@
+{% include header-tests.html %}
+<style>
+    thead {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    td {
+        padding: 5px;
+        text-align: center;
+        border: 1px solid var(--main-color);
+    }
+</style>
+<article>
+    <header>
+        <h1>
+            <span>{{page.n}}{% if page.a %} ({{page.a}}){% endif %}</span>
+        </h1>
+    </header>
+
+    <section class="pbox">
+        {{content}}
+    </section>
+</article>
+{% include footer-tests.html %}
