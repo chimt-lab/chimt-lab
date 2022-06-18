@@ -338,6 +338,12 @@ body {
   animation: fadein .5s;
 }
 
+@media all and (max-width: 460px) {
+  #backBtn {
+    display: none;
+  }
+}
+
 
 .sidenav {
   height: 100%;
