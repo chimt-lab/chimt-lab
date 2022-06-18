@@ -24,6 +24,7 @@ var store = [{% for test in site.tests %}{
   "s": {{ test.s | jsonify }}
 }{% unless forloop.last %},{% endunless %}{% endfor %}]
 // builds search
+
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
     var resultdiv = $('#results');
@@ -44,7 +45,7 @@ $(document).ready(function() {
       var testAbbrev = '';
 
       if (store[ref].a) {
-        testAbbrev = ' ('+store[ref].a+')';
+        testAbbrev = ' <span class="test-abbrev">('+store[ref].a+')</span>';
       }
       var searchitem = '<div class="result"><div class="result-body"><a href="'+testLink+'" class="post-title">'+store[ref].n+testAbbrev+'</a></div></div>';
       resultdiv.append(searchitem);

@@ -18,15 +18,25 @@
     .pbox {
         display: none;
     }
-    .result-body a {font-size: 22px;font-weight: bold;color: var(--main-color);}
-    .all-posts.results p {font-size: 20px;font-weight: bold;}
-    .result {
-        margin: 15px auto;
-        background-color: white;
-        padding: 5px;
-        border: 1px solid #c1c1c1;
-        border-radius: 15px;
-        box-shadow: var(--main-box-shadow);}
+
+    @media all and (max-width: 700px) {
+        
+        input#search {
+            margin: 0px auto;
+            
+        }
+        section {
+            margin: 5px 0;
+        }
+        .pbox {
+            margin: 5px auto;
+        }
+
+        header h1 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    }
 </style>
 <article>
     <header>

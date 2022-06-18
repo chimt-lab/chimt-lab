@@ -1,6 +1,6 @@
 ---
 n: Albumin, Serum
-a: 
+a: Alb
 s: a
 ---
 

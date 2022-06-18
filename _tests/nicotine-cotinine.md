@@ -1,6 +1,6 @@
 ---
 n: Nicotine/Cotinine
-a: 
+a: NIC/COT
 s: "n"
 ---
 

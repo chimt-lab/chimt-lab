@@ -311,9 +311,33 @@ body {
        animation: fadein .5s;
 }
 
-#myBtn:hover {
+#myBtn:hover, #backBtn:hover {
   background-color: #555;
 }
+
+#backBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 32px;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 8px;
+  -webkit-animation: fadein .5s;
+  -moz-animation: fadein .5s;
+  -ms-animation: fadein .5s;
+  -o-animation: fadein .5s;
+  animation: fadein .5s;
+}
+
 
 .sidenav {
   height: 100%;
@@ -428,7 +452,7 @@ section img {
 .pbox {
   text-align: left;
   background-color: rgb(245 245 245 / 80%);
-  margin: 30px auto;
+  margin: 30px auto 70px;
   max-width: 800px;
   padding: 10px 20px 10px;
   border-radius: 20px;
@@ -473,7 +497,7 @@ section img {
 
   .navbar {
       font-size:16px;
-      margin: 15px 5%;
+      margin: 15px 0;
   }
 
   .sidenav a {
@@ -608,7 +632,7 @@ div.pcenter {
 
 .c-button2 {
   top: 125px;
-  left: 325px;
+  left: 335px;
   transform: rotate(46deg);
 }
 .c-button2-img {
@@ -618,7 +642,7 @@ div.pcenter {
 }
 .c-button3 {
   top: 430px;
-  left: 340px;
+  left: 345px;
   transform: rotate(313deg);
 }
 .c-button3-img {
@@ -664,4 +688,28 @@ div.pcenter {
     left: calc(50% - 250px);
     transform: scale(0.55);
   }
+}
+
+.result-body a, li.result a {font-size: 22px;font-weight: bold;color: var(--main-color);}
+.all-posts.results p {font-size: 20px;font-weight: bold;}
+.result {
+    margin: 15px auto;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #c1c1c1;
+    border-radius: 15px;
+    box-shadow: var(--main-box-shadow);
+}
+.test-abbrev {
+  color: var(--second-color);
+}
+
+.doctorswrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 50px 0 10px;
 }

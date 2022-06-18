@@ -1,6 +1,6 @@
 ---
 n: Magnesium
-a: 
+a: Mg, Mag
 s: m
 ---
 

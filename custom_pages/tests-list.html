@@ -1,0 +1,25 @@
+---
+layout: default
+title: Tests List
+permalink: /tests-list.html
+---
+
+<style>
+    ol {
+        color: var(--main-color);
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .tlstabbrv {
+        color: var(--second-color);
+    }
+</style>
+<ol>
+    {% for test in site.tests %}
+
+        <li class="result">
+            <a href=".{{ test.url }}">{{ test.n }}{% if test.a %} <span class="tlstabbrv">({{test.a}})</span>{% endif %}</a>
+        </li>
+
+    {% endfor %}
+</ol>

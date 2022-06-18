@@ -1,0 +1,27 @@
+---
+layout: default
+title: Instructions
+permalink: /instructions.html
+---
+
+<style>
+    ol {
+        color: var(--main-color);
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .tlstabbrv {
+        color: var(--second-color);
+    }
+</style>
+<ol>
+    {% for page in site.pages %}
+
+    {% if page.instructions %}
+        <li class="result">
+            <a href=".{{ page.url }}">{{ page.title }}</a>
+        </li>
+    {% endif %}
+
+    {% endfor %}
+</ol>
