@@ -719,3 +719,18 @@ div.pcenter {
   font-weight: bold;
   margin: 50px 0 10px;
 }
+
+.single-img-doctors img {
+  max-width: 345px;
+  margin: 50px auto 30px;
+}
+
+.single-info-d {
+  font-size: 26px;
+}
+
+.single-info-desc {
+  font-size: 16px;
+  color: var(--main-color);
+  margin-top: 5px;
+}
